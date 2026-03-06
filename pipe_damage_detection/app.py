@@ -24,7 +24,7 @@ model.eval()
 
 classes = ["Damaged", "Undamaged"]
 
-ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg"}
+ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg", "webp"}
 
 def allowed_file(filename):
     return "." in filename and filename.rsplit(".",1)[1].lower() in ALLOWED_EXTENSIONS
@@ -47,7 +47,7 @@ def index():
             return render_template("index.html", error=error)
 
         if not allowed_file(file.filename):
-            error = "Only PNG, JPG, JPEG files are allowed."
+            error = "Only PNG, JPG, JPEG, WEBP files are allowed."
             return render_template("index.html", error=error)
 
         try:
