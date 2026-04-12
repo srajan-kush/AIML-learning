@@ -5,7 +5,7 @@ load_dotenv()
 from langchain_mistralai import ChatMistralAI
 from langchain_core.messages import SystemMessage, AIMessage, HumanMessage
 
-model = ChatMistralAI(model = "mistral-small-2506",temperature=0.9)
+model = ChatMistralAI(model="mistral-small-2506",temperature=0.9)
 
 messages = [
     SystemMessage(content='you are a funny AI agent')
