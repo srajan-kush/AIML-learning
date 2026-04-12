@@ -9,7 +9,7 @@ from langchain_core.messages import SystemMessage, AIMessage, HumanMessage
 
 # ── Page Config ──────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Funny AI Agent",
+    page_title="Srajan AI Agent",
     page_icon="🤡",
     layout="centered",
     initial_sidebar_state="expanded",
